@@ -153,8 +153,16 @@ img{ max-width:100%; display:block }
 .portada__art g[data-art]{ display:none }
 .portada__art g[data-art].is-on{ display:block }
 @media (max-width:900px){
-  .portada__int{ grid-template-columns:1fr }
-  .portada__art{ max-width:460px; margin:8px auto 0 }
+  /* En vertical: primero el dibujo, luego el texto, todo centrado.
+     Asi se ve cambiar la ilustracion junto con la tira, sin bajar. */
+  .portada{ padding:24px 0 44px; text-align:center }
+  .portada__int{ grid-template-columns:1fr; gap:4px }
+  .portada__art{ order:-1; max-width:262px; margin:0 auto }
+  .portada h1{ font-size:clamp(32px,8.4vw,52px); margin-inline:auto }
+  .portada__lead{ margin-inline:auto }
+  .raya{ margin:0 auto 16px }
+  .portada .sobre{ margin-bottom:12px; letter-spacing:.1em; font-size:11px }
+  .portada__cta{ justify-content:center; margin-top:26px }
 }
 .raya{ display:block; width:64px; height:4px; background:var(--naranja); border-radius:2px; margin-bottom:22px }
 .portada h1{ color:#fff; max-width:13ch; font-size:clamp(38px,5.2vw,66px) }
