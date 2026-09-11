@@ -137,30 +137,6 @@ img{ max-width:100%; display:block }
 .sec{ padding:clamp(56px,8vw,96px) 0 }
 .sec--apretada{ padding-top:0 }
 
-/* ── trío de lozas ───────────────────────────────────── */
-.trio{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px }
-.loza{
-  position:relative; overflow:hidden; border-radius:var(--r-md);
-  aspect-ratio:1/1.05; display:block; color:#fff;
-}
-.loza:hover{ text-decoration:none }
-.loza img{ width:100%; height:100%; object-fit:cover }
-.loza--fachada img{ object-position:30% 55% }
-.loza__velo{
-  position:absolute; inset:0;
-  background:linear-gradient(180deg,rgba(20,45,30,.15) 0 40%,rgba(18,40,26,.78) 100%);
-}
-.loza__txt{
-  position:absolute; z-index:3; left:24px; right:24px; bottom:22px;
-  font-size:20px; font-weight:600; line-height:1.25; letter-spacing:-.015em; color:#fff;
-}
-.loza--color{ background:var(--bosque); display:flex; align-items:flex-end }
-.loza--color .loza__txt{ position:static; padding:24px }
-@media (max-width:860px){
-  .trio{ grid-template-columns:1fr }
-  .loza{ aspect-ratio:16/10 }
-}
-
 /* ── lista de productos ──────────────────────────────── */
 .lista{ border-top:1px solid var(--linea) }
 .renglon{
@@ -182,29 +158,6 @@ img{ max-width:100%; display:block }
 }
 .aviso p{ margin:0; color:var(--tinta); font-size:15.5px; max-width:56ch }
 
-/* ── banda naranja ───────────────────────────────────── */
-.banda{
-  background:var(--naranja); border-radius:var(--r-md); overflow:hidden;
-  display:grid; grid-template-columns:repeat(4,1fr) .85fr; align-items:stretch;
-}
-.banda__col{
-  padding:34px 24px; color:#fff; text-align:center;
-  border-right:1px solid rgba(255,255,255,.28);
-  display:flex; flex-direction:column; justify-content:center;
-}
-.banda__col b{ display:block; font-size:clamp(20px,2.4vw,27px); font-weight:700; letter-spacing:-.025em; line-height:1.15 }
-.banda__col span{ display:block; font-size:13.5px; color:rgba(255,255,255,.85); margin-top:8px }
-.banda__foto{ position:relative; min-height:180px }
-.banda__foto img{ position:absolute; inset:0 }
-.banda__foto img{ width:100%; height:100%; object-fit:cover; border-radius:var(--r-md) 0 0 var(--r-md) }
-@media (max-width:1000px){
-  .banda{ grid-template-columns:repeat(2,1fr) }
-  .banda__col:nth-child(2n){ border-right:0 }
-  .banda__col{ border-bottom:1px solid rgba(255,255,255,.28) }
-  .banda__foto{ grid-column:span 2; min-height:0; aspect-ratio:16/8 }
-  .banda__foto img{ border-radius:0 }
-}
-
 /* ── ubicación ───────────────────────────────────────── */
 .foto-ancha{
   position:relative; overflow:hidden; border-radius:var(--r-md);
@@ -219,6 +172,12 @@ img{ max-width:100%; display:block }
 .foto-ancha__txt b{ display:block; font-size:clamp(19px,2.4vw,25px); font-weight:600; letter-spacing:-.02em }
 .foto-ancha__txt span{ display:block; font-size:14.5px; color:rgba(255,255,255,.85) }
 
+.bajo-foto{
+  margin-top:22px; display:flex; gap:22px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.bajo-foto p{ margin:0; font-size:15.5px }
+.bajo-foto b{ color:var(--tinta); font-weight:600 }
+
 .pin{ position:absolute; z-index:4; left:46%; top:44%; transform:translate(-50%,-50%) }
 .pin__aro{
   position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
@@ -232,17 +191,7 @@ img{ max-width:100%; display:block }
 }
 @media (max-width:760px){ .pin__t{ display:none } }
 
-.dupla{ display:grid; grid-template-columns:1.45fr .55fr; gap:20px }
-.caja{ background:var(--blanco); border:1px solid var(--linea); border-radius:var(--r-md); overflow:hidden }
-.caja--mapa{ min-height:380px; position:relative }
-.caja--mapa iframe{ position:absolute; inset:0; width:100%; height:100%; border:0 }
 
-.ficha{ padding:26px 28px 28px }
-.ficha dl{ margin:0 0 22px; display:grid; gap:16px }
-.ficha dt{ font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--tenue); font-weight:600; margin-bottom:3px }
-.ficha dd{ margin:0; color:var(--tinta); font-size:15.5px; line-height:1.5 }
-.ficha dd a{ color:var(--tinta) }
-@media (max-width:900px){ .dupla{ grid-template-columns:1fr } }
 
 /* ── cierre partido ──────────────────────────────────── */
 .cierre{
