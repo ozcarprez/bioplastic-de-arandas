@@ -111,6 +111,34 @@ img{ max-width:100%; display:block }
   .menu{ display:none }
 }
 
+/* ── tira de categorías ──────────────────────────────── */
+.tira{
+  background:var(--blanco); border-bottom:1px solid var(--linea);
+  padding:4px max(1rem, calc((100vw - var(--ancho)) / 2));
+}
+.tira__pista{
+  list-style:none; margin:0; padding:0;
+  display:flex; gap:4px; overflow-x:auto; scroll-behavior:smooth; scrollbar-width:none;
+}
+.tira__pista::-webkit-scrollbar{ display:none }
+.tira__pista li{ flex:0 0 auto }
+.tira__it{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  width:108px; padding:12px 6px 10px; border-radius:var(--r-sm);
+  color:var(--texto); background:none; border:0; cursor:pointer;
+  font-family:inherit; border-bottom:3px solid transparent;
+}
+.tira__it:hover{ color:var(--naranja) }
+.tira__it.is-on{ color:var(--naranja); border-bottom-color:var(--naranja) }
+.tira__it svg{ width:38px; height:38px; display:block }
+.tira__it span{ font-size:12.5px; line-height:1.25; text-align:center; font-weight:500 }
+
+@media (max-width:700px){
+  .tira{ padding-inline:1rem }
+  .tira__it{ width:92px }
+  .tira__it svg{ width:32px; height:32px }
+}
+
 /* ── portada ─────────────────────────────────────────── */
 .portada{
   background:
@@ -122,6 +150,8 @@ img{ max-width:100%; display:block }
 .portada__int{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,4vw,56px); align-items:center }
 .portada__art{ position:relative }
 .portada__art svg{ width:100%; height:auto; display:block; overflow:visible }
+.portada__art g[data-art]{ display:none }
+.portada__art g[data-art].is-on{ display:block }
 @media (max-width:900px){
   .portada__int{ grid-template-columns:1fr }
   .portada__art{ max-width:460px; margin:8px auto 0 }

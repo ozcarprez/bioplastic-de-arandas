@@ -64,6 +64,72 @@
   </div>
 </header>
 
+<!-- ══════════ TIRA DE CATEGORÍAS ══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="ic-bolsa" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 14h22l2 20a2 2 0 0 1-2 2.2H9a2 2 0 0 1-2-2.2z"/>
+    <path d="M13.5 14c0-5.5 2.6-8.6 6.5-8.6s6.5 3.1 6.5 8.6"/>
+    <path d="M16.5 5.8c1.6 1.6 5.4 1.6 7 0"/>
+  </g>
+  <g id="ic-transparente" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 12h20l2 22a2 2 0 0 1-2 2.2H10a2 2 0 0 1-2-2.2z"/>
+    <path d="M14 12V7.5a6 6 0 0 1 12 0V12"/>
+  </g>
+  <g id="ic-degradable" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 14h22l2 20a2 2 0 0 1-2 2.2H9a2 2 0 0 1-2-2.2z"/>
+    <path d="M13.5 14c0-5.5 2.6-8.6 6.5-8.6s6.5 3.1 6.5 8.6"/>
+    <path d="M20 30v-6"/>
+    <path d="M20 24c3.5-4.4 8.6-4.4 8.6-4.4S28 25.5 20 26"/>
+  </g>
+  <g id="ic-vaso" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="9" y="10" width="22" height="4.4" rx="2.2"/>
+    <path d="M11 14.4h18l-2.4 20.4a2 2 0 0 1-2 1.8h-9.2a2 2 0 0 1-2-1.8z"/>
+    <path d="M25.5 10l3.2-5.6"/>
+  </g>
+  <g id="ic-plato" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="7.6"/>
+  </g>
+  <g id="ic-cubiertos" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 5v8M16 5v8M14 5v8"/>
+    <path d="M10 13a4 4 0 0 0 8 0"/><path d="M14 17v18"/>
+    <path d="M27.5 5c3.4 4 3.4 11 1.6 14.4"/><path d="M28 19.4V35"/>
+  </g>
+  <g id="ic-charola" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 14h28a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/>
+    <path d="M9 18h22"/>
+  </g>
+  <g id="ic-contenedor" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 23h24v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/>
+    <path d="M8 23l4.5-11h15L32 23"/><path d="M15 17h10"/>
+  </g>
+  <g id="ic-emplaye" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="20" cy="11" rx="10" ry="4"/>
+    <path d="M10 11v18a10 4 0 0 0 20 0V11"/>
+    <ellipse cx="20" cy="11" rx="3.4" ry="1.4"/>
+  </g>
+  <g id="ic-aluminio" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="19" cy="17" rx="12" ry="4"/>
+    <path d="M7 17v9a12 4 0 0 0 24 0v-9"/>
+    <path d="M31 21l4 2-4 2"/>
+  </g>
+  <g id="ic-servilleta" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 29h24"/><path d="M10 25.5h24l-2-4H8z"/><path d="M12 17.5h22l-2-4H10z"/>
+  </g>
+</defs></svg>
+
+<nav class="tira" aria-label="Lo que manejamos">
+  <ul class="tira__pista">
+    <li><button type="button" class="tira__it is-on" data-cat="bolsa"><svg viewBox="0 0 40 40"><use href="#ic-bolsa"/></svg><span>Bolsas</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="vaso"><svg viewBox="0 0 40 40"><use href="#ic-vaso"/></svg><span>Vasos</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="plato"><svg viewBox="0 0 40 40"><use href="#ic-plato"/></svg><span>Platos</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="cubiertos"><svg viewBox="0 0 40 40"><use href="#ic-cubiertos"/></svg><span>Cubiertos</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="contenedor"><svg viewBox="0 0 40 40"><use href="#ic-contenedor"/></svg><span>Contenedores</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="emplaye"><svg viewBox="0 0 40 40"><use href="#ic-emplaye"/></svg><span>Emplaye</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="charola"><svg viewBox="0 0 40 40"><use href="#ic-charola"/></svg><span>Charolas</span></button></li>
+    <li><button type="button" class="tira__it" data-cat="servilleta"><svg viewBox="0 0 40 40"><use href="#ic-servilleta"/></svg><span>Servilletas</span></button></li>
+  </ul>
+</nav>
+
 <main id="contenido">
 
   <!-- ══════════ PORTADA ══════════ -->
@@ -87,45 +153,79 @@
         </div>
       </div>
 
-      <div class="portada__art" aria-hidden="true">
-        <svg viewBox="0 0 560 480" role="img">
-          <title>Rollo de emplaye, bolsa y vaso desechable</title>
+      <div class="portada__art">
+        <svg viewBox="0 0 560 470" role="img" aria-live="polite">
+          <title>Producto que manejamos</title>
 
-          <circle cx="296" cy="232" r="218" fill="#ffffff" opacity=".07"/>
-          <circle cx="296" cy="232" r="218" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="1.5"/>
+          <circle cx="280" cy="230" r="214" fill="#ffffff" opacity=".07"/>
+          <circle cx="280" cy="230" r="214" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="1.5"/>
+          <ellipse cx="280" cy="446" rx="132" ry="17" fill="#000" opacity=".18"/>
 
-          <!-- sombras de piso -->
-          <ellipse cx="115" cy="432" rx="62" ry="12" fill="#000" opacity=".16"/>
-          <ellipse cx="292" cy="462" rx="98" ry="14" fill="#000" opacity=".18"/>
-          <ellipse cx="455" cy="448" rx="52" ry="11" fill="#000" opacity=".16"/>
-
-          <!-- ROLLO DE EMPLAYE -->
-          <g>
-            <path d="M57 170 h116 v230 a58 26 0 0 1 -116 0 z" fill="#f3f1e8"/>
-            <path d="M140 176 h33 v224 a58 26 0 0 1 -33 26 z" fill="#000" opacity=".07"/>
-            <ellipse cx="115" cy="170" rx="58" ry="26" fill="#ffffff"/>
-            <ellipse cx="115" cy="170" rx="21" ry="9.5" fill="#d6d1c1"/>
-            <path d="M173 214 c45 13 63 47 55 88 -6 27 -25 45 -49 50 l0 -29 c17 -6 27 -20 30 -37 4 -25 -12 -43 -36 -49 z" fill="#ffffff" opacity=".5"/>
+          <g data-art="bolsa" class="is-on">
+            <path d="M232 200c1-48 20-72 49-79l8 29c-17 6-27 24-27 50z" fill="#fdfcf6"/>
+            <path d="M328 200c-1-48-20-72-49-79l-8 29c17 6 27 24 27 50z" fill="#fdfcf6"/>
+            <path d="M212 198h136l21 210a22 22 0 0 1-22 24H213a22 22 0 0 1-22-24z" fill="#fdfcf6"/>
+            <path d="M300 198h48l21 210a22 22 0 0 1-22 24h-47z" fill="#000" opacity=".06"/>
+            <path d="M240 252h72" stroke="#000" stroke-opacity=".07" stroke-width="4" stroke-linecap="round"/>
+            <path d="M280 316c17-22 43-22 43-22s-5 28-31 30z" fill="#3d5540" opacity=".22"/>
+            <path d="M280 316c-17-22-43-22-43-22s5 28 31 30z" fill="#3d5540" opacity=".22"/>
+            <path d="M280 352v-36" stroke="#3d5540" stroke-opacity=".22" stroke-width="5" stroke-linecap="round"/>
           </g>
 
-          <!-- BOLSA CAMISETA -->
-          <g>
-            <path d="M222 216 c1 -41 17 -61 42 -67 l7 25 c-15 5 -23 20 -23 42 z" fill="#fdfcf6"/>
-            <path d="M358 216 c-1 -41 -17 -61 -42 -67 l-7 25 c15 5 23 20 23 42 z" fill="#fdfcf6"/>
-            <path d="M205 214 h170 l18 220 a20 20 0 0 1 -20 22 h-166 a20 20 0 0 1 -20 -22 z" fill="#fdfcf6"/>
-            <path d="M332 214 h43 l18 220 a20 20 0 0 1 -20 22 h-41 z" fill="#000" opacity=".06"/>
-            <path d="M246 268 h88" stroke="#000" stroke-opacity=".07" stroke-width="3" stroke-linecap="round"/>
-            <path d="M284 318 c16 -21 41 -21 41 -21 s-5 27 -30 29 z" fill="#3d5540" opacity=".22"/>
-            <path d="M284 318 c-16 -21 -41 -21 -41 -21 s5 27 30 29 z" fill="#3d5540" opacity=".22"/>
-            <path d="M284 352 v-34" stroke="#3d5540" stroke-opacity=".22" stroke-width="5" stroke-linecap="round"/>
+          <g data-art="vaso">
+            <path d="M332 174l28-62" stroke="#e8801e" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <rect x="196" y="174" width="168" height="36" rx="18" fill="#e8801e"/>
+            <path d="M206 210h148l-20 196a22 22 0 0 1-22 20h-64a22 22 0 0 1-22-20z" fill="#f7f4ea"/>
+            <path d="M296 210h58l-20 196a22 22 0 0 1-22 20h-32z" fill="#000" opacity=".06"/>
           </g>
 
-          <!-- VASO -->
-          <g>
-            <path d="M482 240 l22 -52" stroke="#e8801e" stroke-width="11" stroke-linecap="round" fill="none"/>
-            <rect x="398" y="240" width="112" height="26" rx="13" fill="#e8801e"/>
-            <path d="M404 266 h100 l-13 156 a16 16 0 0 1 -16 14 h-42 a16 16 0 0 1 -16 -14 z" fill="#f6f3e9"/>
-            <path d="M466 266 h38 l-13 156 a16 16 0 0 1 -16 14 h-21 z" fill="#000" opacity=".06"/>
+          <g data-art="plato">
+            <path d="M110 322a170 76 0 0 0 340 0v18a170 76 0 0 1-340 0z" fill="#000" opacity=".1"/>
+            <ellipse cx="280" cy="322" rx="170" ry="76" fill="#fdfcf6"/>
+            <ellipse cx="280" cy="314" rx="112" ry="48" fill="#efece0"/>
+            <ellipse cx="280" cy="310" rx="64" ry="26" fill="#f8f6ee"/>
+          </g>
+
+          <g data-art="cubiertos">
+            <rect x="176" y="132" width="11" height="56" rx="5.5" fill="#f7f4ea"/>
+            <rect x="196" y="132" width="11" height="56" rx="5.5" fill="#f7f4ea"/>
+            <rect x="216" y="132" width="11" height="56" rx="5.5" fill="#f7f4ea"/>
+            <path d="M172 182h59v10a29 26 0 0 1-59 0z" fill="#f7f4ea"/>
+            <rect x="193" y="214" width="17" height="204" rx="8.5" fill="#f7f4ea"/>
+            <path d="M300 132c34 30 36 104 20 142h-30V150a18 18 0 0 1 10-18z" fill="#f7f4ea"/>
+            <rect x="299" y="270" width="17" height="148" rx="8.5" fill="#f7f4ea"/>
+            <ellipse cx="384" cy="182" rx="34" ry="50" fill="#f7f4ea"/>
+            <rect x="376" y="222" width="17" height="196" rx="8.5" fill="#f7f4ea"/>
+          </g>
+
+          <g data-art="contenedor">
+            <path d="M182 268l-28-88h252l-28 88z" fill="#e3c79c"/>
+            <path d="M154 180h252l-14 44H168z" fill="#000" opacity=".07"/>
+            <path d="M150 300l32-30h196l32 30z" fill="#f2ede2"/>
+            <path d="M150 300h260v88a18 18 0 0 1-18 18H168a18 18 0 0 1-18-18z" fill="#e3c79c"/>
+            <path d="M330 300h80v88a18 18 0 0 1-18 18h-62z" fill="#000" opacity=".07"/>
+          </g>
+
+          <g data-art="emplaye">
+            <path d="M194 170h172v210a86 36 0 0 1-172 0z" fill="#f3f1e8"/>
+            <path d="M312 178h54v202a86 36 0 0 1-54 34z" fill="#000" opacity=".07"/>
+            <ellipse cx="280" cy="170" rx="86" ry="36" fill="#ffffff"/>
+            <ellipse cx="280" cy="170" rx="30" ry="13" fill="#d6d1c1"/>
+            <path d="M366 222c58 18 80 62 70 114-8 36-34 60-66 66v-40c22-8 36-26 40-50 5-32-16-56-46-64z" fill="#ffffff" opacity=".5"/>
+          </g>
+
+          <g data-art="charola">
+            <path d="M112 300l66-52h204l66 52z" fill="#fdfcf6"/>
+            <path d="M162 300l44-34h148l44 34z" fill="#efece0"/>
+            <path d="M112 300h336v26a16 16 0 0 1-16 16H128a16 16 0 0 1-16-16z" fill="#f2efe3"/>
+            <path d="M300 300h148v26a16 16 0 0 1-16 16h-132z" fill="#000" opacity=".06"/>
+          </g>
+
+          <g data-art="servilleta">
+            <path d="M132 376l72-54h226l-72 54z" fill="#efece0"/>
+            <path d="M132 340l72-54h226l-72 54z" fill="#f7f4ea"/>
+            <path d="M132 304l72-54h226l-72 54z" fill="#fdfcf6"/>
+            <path d="M204 250h226l-72 54H132z" fill="#000" opacity=".04"/>
           </g>
         </svg>
       </div>
@@ -232,6 +332,39 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var botones = Array.prototype.slice.call(document.querySelectorAll('.tira__it'));
+    var dibujos = document.querySelectorAll('.portada__art g[data-art]');
+    var pista   = document.querySelector('.tira__pista');
+    if (!botones.length) return;
+
+    var i = 0, solo = null;
+
+    function mostrar(n) {
+      i = (n + botones.length) % botones.length;
+      var cat = botones[i].dataset.cat;
+      botones.forEach(function (b) { b.classList.toggle('is-on', b === botones[i]); });
+      dibujos.forEach(function (g) { g.classList.toggle('is-on', g.dataset.art === cat); });
+      // mantiene visible el activo dentro de la tira
+      var b = botones[i];
+      pista.scrollTo({ left: b.offsetLeft - (pista.clientWidth - b.offsetWidth) / 2, behavior: 'smooth' });
+    }
+
+    botones.forEach(function (b, n) {
+      b.addEventListener('click', function () { mostrar(n); reiniciar(); });
+    });
+
+    function reiniciar() {
+      clearInterval(solo);
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        solo = setInterval(function () { mostrar(i + 1); }, 3500);
+      }
+    }
+    reiniciar();
+  })();
+</script>
 
 </body>
 </html>
