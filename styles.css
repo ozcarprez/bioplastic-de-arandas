@@ -95,9 +95,8 @@ img{ max-width:100%; display:block }
   border-bottom:1px solid var(--linea);
 }
 .barra__int{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0 }
-.marca{ display:flex; align-items:center; gap:11px; color:inherit }
+.marca{ display:flex; align-items:center; color:inherit }
 .marca:hover{ text-decoration:none }
-.marca img{ width:34px; height:auto }
 .marca span{ display:flex; flex-direction:column; line-height:1.15 }
 .marca b{ color:var(--tinta); font-size:16px; font-weight:800; letter-spacing:-.02em }
 .marca small{ color:var(--tenue); font-size:12px }
