@@ -119,9 +119,17 @@ img{ max-width:100%; display:block }
   color:#dff0f5;
   padding:clamp(56px,8vw,104px) 0 clamp(60px,8vw,110px);
 }
+.portada__int{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,4vw,56px); align-items:center }
+.portada__art{ position:relative }
+.portada__art svg{ width:100%; height:auto; display:block; overflow:visible }
+@media (max-width:900px){
+  .portada__int{ grid-template-columns:1fr }
+  .portada__art{ max-width:460px; margin:8px auto 0 }
+}
 .raya{ display:block; width:64px; height:4px; background:var(--naranja); border-radius:2px; margin-bottom:22px }
-.portada h1{ color:#fff; max-width:12ch }
-.portada__lead{ max-width:46ch; font-size:17.5px; color:#dff0f5; margin-top:26px }
+.portada h1{ color:#fff; max-width:13ch; font-size:clamp(38px,5.2vw,66px) }
+.portada__lead{ max-width:42ch; font-size:17px; color:#dff0f5; margin-top:22px }
+.portada__lead b{ color:#fff; font-weight:600 }
 .portada__lead--chico{ font-size:15.5px; color:#bfdde6; max-width:52ch }
 .portada__cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:34px }
 
