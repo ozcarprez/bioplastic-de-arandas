@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 24 144 172" width="144" height="172"
+     role="img" aria-label="Bioplastic de Arandas" style="color:#ffffff">
+  <title>Bioplastic de Arandas</title>
+
+  <defs>
+    <path id="bpab-e-hoja-g" fill-rule="evenodd"
+          d="M100 98c-20-16-20-52 0-74 20 22 20 58 0 74z M100 87c-6-11-6-33 0-46 6 13 6 35 0 46z"/>
+    <path id="bpab-e-hoja-c" fill-rule="evenodd"
+          d="M100 98c-16-12-16-38 0-54 16 16 16 42 0 54z M100 89c-5-8-5-24 0-32 5 8 5 24 0 32z"/>
+    <clipPath id="bpab-e-globo">
+      <circle cx="100" cy="150" r="30"/>
+    </clipPath>
+  </defs>
+
+  <!-- hojas -->
+  <g fill="currentColor">
+    <use href="#bpab-e-hoja-c" transform="rotate(-60 100 98)"/>
+    <use href="#bpab-e-hoja-c" transform="rotate(60 100 98)"/>
+    <use href="#bpab-e-hoja-g" transform="rotate(-22 100 98)"/>
+    <use href="#bpab-e-hoja-g" transform="rotate(22 100 98)"/>
+  </g>
+
+  <!-- borde del vaso -->
+  <rect x="32" y="98" width="136" height="22" rx="11" fill="currentColor"/>
+
+  <!-- cuerpo del vaso -->
+  <path d="M44 124l17 56a12 12 0 0 0 11 8h56a12 12 0 0 0 11-8l17-56"
+        fill="none" stroke="currentColor" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- globo -->
+  <circle cx="100" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="6"/>
+  <g clip-path="url(#bpab-e-globo)" fill="currentColor">
+    <path d="M82 122c9-2 14 4 12 10-2 6-8 8-8 13 0 7 7 9 3 16-3 6-10 5-15 0-6-8-8-19-5-28 2-7 7-10 13-11z"/>
+    <path d="M116 131c9 1 13 8 10 15-3 6-10 7-11 13-2 8-9 12-14 6-6-7-3-18 2-26 4-5 8-8 13-8z"/>
+    <path d="M91 170c7-2 14 1 14 7 0 5-5 9-11 9-7 0-11-5-10-10 1-3 3-5 7-6z"/>
+  </g>
+</svg>

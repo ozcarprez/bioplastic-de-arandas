@@ -118,7 +118,8 @@ img { max-width: 100%; display: block; }
 }
 .brand { display: flex; align-items: center; gap: .7rem; color: inherit; }
 .brand:hover { text-decoration: none; }
-.brand__logo, .brand .logo-fallback { width: 44px; height: 44px; object-fit: contain; flex: none; }
+.brand__logo { flex: none; display: block; width: 40px; }
+.brand__logo img { width: 40px; height: auto; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand__text strong { color: var(--tinta); font-size: 1.02rem; font-weight: 700; }
 .brand__text small { color: var(--suave); font-size: .78rem; }
@@ -191,7 +192,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--sombra-alta);
   display: grid; place-items: center;
 }
-.logo-card img, .logo-card .logo-fallback { width: 100%; max-width: 330px; height: auto; }
+.logo-card img { width: 100%; max-width: 320px; height: auto; }
 
 /* ---------- datos rápidos ---------- */
 .quick { padding: 0 0 clamp(2rem, 5vw, 3.5rem); }

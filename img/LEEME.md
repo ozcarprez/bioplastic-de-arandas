@@ -1,13 +1,20 @@
 # Imágenes del sitio
 
-Guarde aquí los archivos con estos nombres exactos (el HTML ya los busca así):
+El logotipo ya está vectorizado aquí como SVG:
 
-| Archivo        | Qué es                                    | Sugerencia                     |
-|----------------|-------------------------------------------|--------------------------------|
-| `logo.png`     | Logotipo: la pera con las flechas verdes  | PNG con fondo transparente, ~600×600 px |
-| `fachada.jpg`  | Fachada / esquina del local               | horizontal o vertical, ~1200 px de ancho |
-| `local.jpg`    | Interior con la mercancía                 | ~1200 px de ancho              |
+| Archivo | Uso |
+|---------|-----|
+| `logo.svg` | Logotipo completo en verde, para fondos claros |
+| `logo-blanco.svg` | Logotipo completo en blanco, para fondos oscuros |
+| `emblema.svg` | Solo la maceta (favicon, perfil de redes) |
+| `emblema-blanco.svg` | La maceta en blanco |
 
-Mientras `logo.png` no exista, la página dibuja un logotipo de respaldo en SVG.
-Mientras falten las fotos, se muestra un marco con la leyenda "Foto del local"
+Faltan las fotos del local. Guárdelas con estos nombres exactos:
+
+| Archivo | Qué es | Sugerencia |
+|---------|--------|------------|
+| `fachada.jpg` | Fachada / esquina del local | ~1200 px de ancho |
+| `local.jpg` | Interior con la mercancía | ~1200 px de ancho |
+
+Mientras falten, la página muestra un marco con la leyenda "Foto del local"
 en lugar del ícono de imagen rota.

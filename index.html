@@ -11,10 +11,10 @@
 <meta property="og:locale" content="es_MX">
 <meta property="og:title" content="Bioplastic de Arandas — Nueva ubicación en Otay Universidad">
 <meta property="og:description" content="Bolsas y desechables 100% degradables. Ahora en Contadores 2227, Otay Universidad, Tijuana.">
-<meta property="og:image" content="img/logo.png">
+<meta property="og:image" content="img/logo.svg">
 
-<link rel="icon" href="img/logo.png">
-<link rel="apple-touch-icon" href="img/logo.png">
+<link rel="icon" href="img/emblema.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/emblema.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
   "@type": "Store",
   "name": "Bioplastic de Arandas",
   "description": "Distribuidora de bolsas plásticas, desechables y material de empaque en Tijuana.",
-  "image": "img/logo.png",
+  "image": "img/logo.svg",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Calle Contadores 2227",
@@ -50,7 +50,10 @@
 <header class="topbar">
   <div class="wrap topbar__inner">
     <a class="brand" href="#inicio">
-      <img class="brand__logo" src="img/logo.png" alt="" data-logo>
+      <picture class="brand__logo">
+        <source srcset="img/emblema-blanco.svg" media="(prefers-color-scheme: dark)">
+        <img src="img/emblema.svg" alt="" width="144" height="172">
+      </picture>
       <span class="brand__text">
         <strong>Bioplastic de Arandas</strong>
         <small>Bolsas y desechables</small>
@@ -87,7 +90,10 @@
 
       <div class="hero__art">
         <div class="logo-card">
-          <img src="img/logo.png" alt="Logotipo de Bioplastic de Arandas: bolsas y desechables 100% degradables" data-logo>
+          <picture>
+            <source srcset="img/logo-blanco.svg" media="(prefers-color-scheme: dark)">
+            <img src="img/logo.svg" alt="Logotipo de Bioplastic de Arandas" width="320" height="332">
+          </picture>
         </div>
       </div>
     </div>
@@ -218,41 +224,13 @@
   </svg>
 </a>
 
-<!-- Logo de respaldo: se dibuja solo mientras /img/logo.png no exista -->
-<template id="logo-svg">
-  <svg class="logo-fallback" viewBox="0 0 200 200" role="img" aria-label="Bioplastic de Arandas">
-    <defs>
-      <linearGradient id="lgA" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#2f9e3f"/><stop offset="100%" stop-color="#d7e021"/>
-      </linearGradient>
-      <linearGradient id="lgB" x1="1" y1="1" x2="0" y2="0">
-        <stop offset="0%" stop-color="#2f9e3f"/><stop offset="100%" stop-color="#d7e021"/>
-      </linearGradient>
-    </defs>
-    <path d="M100 14a86 86 0 0 1 80 55" fill="none" stroke="url(#lgA)" stroke-width="16" stroke-linecap="round"/>
-    <path d="M100 186a86 86 0 0 1-80-55" fill="none" stroke="url(#lgB)" stroke-width="16" stroke-linecap="round"/>
-    <path d="M186 62l6 30-28-10z" fill="#d7e021"/>
-    <path d="M14 138l-6-30 28 10z" fill="#d7e021"/>
-    <path d="M100 52c-9 0-16 9-16 20 0 8-8 14-11 24-5 16 9 32 27 32s32-16 27-32c-3-10-11-16-11-24 0-11-7-20-16-20z" fill="#bccb43"/>
-    <path d="M100 56c-6 0-11 7-11 16 0 9-8 14-10 24-3 13 8 24 21 24s24-11 21-24c-2-10-10-15-10-24 0-9-5-16-11-16z" fill="#dbe673"/>
-    <path d="M100 52V32" stroke="#6b4a2a" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M101 38c8-9 19-9 19-9s-3 13-15 14z" fill="#3f9c3a"/>
-  </svg>
-</template>
-
 <script>
-  // Si todavía no se suben las fotos reales, evitamos íconos de imagen rota.
+  // Si todavía no se suben las fotos del local, evitamos el ícono de imagen rota.
   // Se revisa también el estado actual: la imagen pudo fallar antes de este script.
   function alFallar(img, accion) {
     if (img.complete && img.naturalWidth === 0) { accion(); return; }
     img.addEventListener('error', accion);
   }
-
-  document.querySelectorAll('img[data-logo]').forEach(function (img) {
-    alFallar(img, function () {
-      img.replaceWith(document.getElementById('logo-svg').content.cloneNode(true));
-    });
-  });
 
   document.querySelectorAll('img[data-shot]').forEach(function (img) {
     alFallar(img, function () {
