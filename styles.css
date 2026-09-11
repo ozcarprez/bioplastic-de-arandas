@@ -151,12 +151,6 @@ img{ max-width:100%; display:block }
   .renglon{ grid-template-columns:1fr; gap:6px; padding:20px 0 }
 }
 
-.aviso{
-  margin-top:34px; background:var(--blanco); border:1px solid var(--linea);
-  border-radius:var(--r-sm); padding:20px 24px;
-  display:flex; gap:20px; align-items:center; justify-content:space-between; flex-wrap:wrap;
-}
-.aviso p{ margin:0; color:var(--tinta); font-size:15.5px; max-width:56ch }
 
 /* ── ubicación ───────────────────────────────────────── */
 .foto-ancha{
