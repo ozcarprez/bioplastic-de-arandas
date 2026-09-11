@@ -137,24 +137,8 @@ img{ max-width:100%; display:block }
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
 .portada__lead{ position:relative; margin:24px auto 0; max-width:50ch; font-size:clamp(16px,2vw,18.5px); color:var(--texto-n) }
-.portada__cta{ position:relative; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:32px }
+.portada__cta{ position:relative; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:34px }
 
-.datos{
-  position:relative; margin:48px auto 0; max-width:940px;
-  display:grid; grid-template-columns:repeat(3,1fr);
-  border:1px solid rgba(255,255,255,.13); border-radius:var(--r-md);
-  background:rgba(255,255,255,.05); backdrop-filter:blur(16px);
-  overflow:hidden; text-align:left;
-}
-.datos div{ padding:20px 24px; border-right:1px solid rgba(255,255,255,.1) }
-.datos div:last-child{ border-right:0 }
-.datos b{ display:block; font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--tenue-n); font-weight:700; margin-bottom:8px }
-.datos span{ display:block; color:var(--tinta-n); font-size:15.5px; line-height:1.5 }
-.datos a{ color:var(--tinta-n) }
-@media (max-width:780px){
-  .datos{ grid-template-columns:1fr }
-  .datos div{ border-right:0; border-bottom:1px solid rgba(255,255,255,.1) }
-}
 
 /* ── secciones claras ────────────────────────────────── */
 .sec{ padding:clamp(56px,8vw,92px) 0 }
